@@ -9,6 +9,6 @@ namespace dotCoverCompare.Domain
         {
         }
 
-        public string Name => Previous.Name;
+        public string Name => Current?.Name ?? Previous?.Name;
     }
 }

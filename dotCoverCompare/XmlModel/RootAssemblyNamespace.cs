@@ -5,10 +5,10 @@ namespace dotCoverCompare.XmlModel
 {
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]
-    public class RootAssemblyNamespace : NamedCoverageBase, ICoverCollection<RootAssemblyNamespaceType>
+    public class RootAssemblyNamespace : NamedCoverageBase, ICoverageCollection
     {
-        [XmlElement("Type")]
-        public RootAssemblyNamespaceType[] Items { get; set; }
+        [XmlElement("Type", typeof(RootAssemblyNamespaceType))]
+        public NamedCoverageBase[] Items { get; set; }
         
     }
 }

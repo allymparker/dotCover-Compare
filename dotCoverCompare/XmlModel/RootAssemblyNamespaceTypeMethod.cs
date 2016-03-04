@@ -5,12 +5,12 @@ namespace dotCoverCompare.XmlModel
 {
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]
-    public class RootAssemblyNamespaceTypeMethod : NamedCoverageBase, ICoverCollection<RootAssemblyNamespaceTypeMethodAnonymousMethod>
+    public class RootAssemblyNamespaceTypeMethod : NamedCoverageBase, ICoverageCollection
     {
         public RootAssemblyNamespaceTypeMethodOwnCoverage OwnCoverage { get; set; }
 
 
-        [XmlElement("AnonymousMethod")]
-        public RootAssemblyNamespaceTypeMethodAnonymousMethod[] Items { get; set; }
+        [XmlElement("AnonymousMethod", typeof(RootAssemblyNamespaceTypeMethodAnonymousMethod))]
+        public NamedCoverageBase[] Items { get; set; }
     }
 }

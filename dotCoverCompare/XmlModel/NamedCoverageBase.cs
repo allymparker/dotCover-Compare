@@ -24,7 +24,7 @@ namespace dotCoverCompare.XmlModel
         {
             unchecked
             {
-                return (base.GetHashCode()*397) ^ (Name != null ? Name.GetHashCode() : 0);
+                return (base.GetHashCode()*397) ^ (Name?.GetHashCode() ?? 0);
             }
         }
     }

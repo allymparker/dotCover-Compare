@@ -60,7 +60,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DotCoverResults.resx</DependentUpon>
     </Compile>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Runit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
