@@ -43,7 +43,7 @@
     <Compile Include="Domain\CoverageChange.cs" />
     <Compile Include="Domain\CoverageDiff.cs" />
     <Compile Include="Domain\CoverageDiffBase.cs" />
-    <Compile Include="COmparison.cs" />
+    <Compile Include="Domain\Comparison.cs" />
     <Compile Include="XmlModel\ICoverageCollection.cs" />
     <Compile Include="XmlModel\NamedCoverageBase.cs" />
     <Compile Include="Compare.cs" />

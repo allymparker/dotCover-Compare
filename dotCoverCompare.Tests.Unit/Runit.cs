@@ -20,16 +20,17 @@ namespace dotCoverCompare.Tests.Unit
             var current = (Root)xmlSerializer.Deserialize(XmlReader.Create(new StringReader(DotCoverResults.case1Current)));
             var previous = (Root)xmlSerializer.Deserialize(XmlReader.Create(new StringReader(DotCoverResults.case1Previous)));
 
-            var namedCoverageDiffs = Compare.DoCompare(previous, current);
+            var namedCoverageDiffs = new Compare(false).DoCompare(previous, current);
 
             Print(namedCoverageDiffs);
         }
 
-        private static void Print(IEnumerable<Comparison> namedCoverageDiffs, string indent="")
+        private static void Print(IEnumerable<Comparison> comparisons, string indent="")
         {
-            foreach (var result in namedCoverageDiffs)
+            foreach (var comparison in comparisons.OrderBy(r=>r.Diff.Name))
             {
-                switch (result.Diff.PercentChange)
+                var diff = comparison.Diff;
+                switch (diff.CoverageChangeType)
                 {
                     case CoverageChange.Increased:
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -44,15 +45,15 @@ namespace dotCoverCompare.Tests.Unit
                         throw new ArgumentOutOfRangeException();
                 }
 
-                Console.WriteLine($"{indent}{result.Diff.PercentChange} " +
-                                  $"by {Math.Abs(result.Diff.CoveragePercentDiff):P} " +
-                                  $"to {result.Diff.CurrentCoveragePercent:P} " +
-                                  $"in {result.Diff.Name} - " +
-                                  $"Total Statements {result.Diff.TotalStatementChange}");
+                Console.WriteLine($"{indent}{diff.CoverageType.Name} {diff.CoverageChangeType} " +
+                                  $"by {Math.Abs(diff.CoveragePercentDiff):P} " +
+                                  $"to {diff.CurrentCoveragePercent:P} " +
+                                  $"in {diff.Name} - " +
+                                  $" {diff.StatementChangeType}");
 
-                if (result.Items.Any())
+                if (comparison.Items.Any())
                 {
-                    Print(result.Items, indent + "-");
+                    Print(comparison.Items, indent + "-");
                     Console.WriteLine();
                 }
             }

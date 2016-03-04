@@ -8,22 +8,27 @@ namespace dotCoverCompare
 {
     public class Compare
     {
-        //this is flawed as assemblies/classes/types can change name... Would need to do some kind of code diff against git to find matching members...
-        public static List<Comparison> DoCompare(Root previous, Root current)
+        private readonly bool m_OnlyChanges;
+        public Compare(bool onlyChanges)
+        {
+            this.m_OnlyChanges = onlyChanges;
+        }
+
+        public List<Comparison> DoCompare(Root previous, Root current)
         {
             var previousC = previous.Items;
             var currentC = current.Items;
             return GetNamedCoverageDiffs(previousC, currentC);
         }
 
-        private static List<Comparison> GetNamedCoverageDiffs(
+        private List<Comparison> GetNamedCoverageDiffs(
             IEnumerable<NamedCoverageBase> previous,
             IEnumerable<NamedCoverageBase> current)
         {
             var assemblies = FullOuterJoin(previous, current);
 
             var matchingEntities =
-                assemblies.Where(t => !Equals(t.Item1, t.Item2));
+                assemblies.Where(t =>!m_OnlyChanges || !Equals(t.Item1, t.Item2));
 
             var coverageDiffs =
                 matchingEntities
@@ -32,7 +37,7 @@ namespace dotCoverCompare
             return coverageDiffs.ToList();
         }
 
-        private static Comparison DoCompare(NamedCoverageBase previous, NamedCoverageBase current)
+        private Comparison DoCompare(NamedCoverageBase previous, NamedCoverageBase current)
         {
             var namedCoverageDiffs = new List<Comparison>();
             var previousCollection = previous as ICoverageCollection;

@@ -14,7 +14,7 @@ namespace dotCoverCompare.Domain
             Current = current ?? new T(); 
         }
 
-        public Type CoverageType => typeof (T);
+        public Type CoverageType => Previous?.GetType()??Current.GetType();
 
         public int CurrentCoveredStatements => Current.CoveredStatements;
 
@@ -43,18 +43,26 @@ namespace dotCoverCompare.Domain
             }
         }
 
-        public CoverageChange PercentChange
-            =>
-                CoverageChange(CoveragePercentDiff);
-
-        public CoverageChange TotalStatementChange
-            =>
-                CoverageChange(TotalStatementsDiff);
-        private CoverageChange CoverageChange(double diff)
+        public CoverageChange CoverageChangeType
         {
-            return diff == 0
-                ? Domain.CoverageChange.Unchanged
-                : diff > 0 ? Domain.CoverageChange.Increased : Domain.CoverageChange.Decreased;
+            get
+            {
+                if (CoveragePercentDiff == 0) return CoverageChange.Unchanged;
+                return CoveragePercentDiff > 0
+                        ? CoverageChange.Increased
+                        : CoverageChange.Decreased;
+            }
+        }
+
+        public CodeChange StatementChangeType
+        {
+            get
+            {
+                if (PreviousTotalStatements == 0) return CodeChange.Added;
+                if(CurrentTotalStatements == 0) return CodeChange.Removed;
+
+                return TotalStatementsDiff > 0 ? CodeChange.StatementsIncreased : CodeChange.StatementsDecreased;
+            }
         }
     }
 }

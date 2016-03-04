@@ -6,4 +6,12 @@ namespace dotCoverCompare.Domain
         Unchanged,
         Decreased
     }
+    public enum CodeChange
+    {
+        StatementsIncreased,
+        StatementsDecreased,
+        Added,
+        Removed
+
+    }
 }
