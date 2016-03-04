@@ -17,6 +17,8 @@ namespace dotCoverCompare.Domain
             Current = current;
         }
 
+        public Type CoverageType => typeof (T);
+
         public int CurrentCoveredStatements => Current.CoveredStatements;
 
         public int CurrentTotalStatements => Current.TotalStatements;
