@@ -1,0 +1,1982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="3164" TotalStatements="3763" CoveragePercent="84" ReportType="Xml" DotCoverVersion="10.0.2">
+  <Assembly Name="RedGate.Licensing.Server.Activation" CoveredStatements="1086" TotalStatements="1230" CoveragePercent="88">
+    <Namespace Name="RedGate.Licensing.Server" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+      <Type Name="LicensingException" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+        <Constructor Name="LicensingException()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="LicensingException(string)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="LicensingException(string,Exception)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Domain" CoveredStatements="74" TotalStatements="89" CoveragePercent="83">
+      <Type Name="ActivationAttempt" CoveredStatements="8" TotalStatements="14" CoveragePercent="57">
+        <Property Name="AttemptedMachineHashCode:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Date:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ErrorMessage:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductDescription:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="RegisteredMachineHashCode:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Success:char" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Tags:IEnumerable&lt;ActivationTagValue&gt;" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ActivationTagValue" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+        <Property Name="Created:DateTime" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="TagName:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="TagValue:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+      </Type>
+      <Type Name="BoundProduct" CoveredStatements="36" TotalStatements="36" CoveragePercent="100">
+        <Property Name="ActivationGroup:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ActivationsAllowed:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ActivationsMade:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="AllActivationAttempts:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateCreated:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Edition:Edition" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InvoiceID:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InvoicePassword:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="IsExtension:char" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MajorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MinorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Notes:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="PossibleMajorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="PossibleMinorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductDescription:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="UsersPurchased:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="Edition" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+        <Constructor Name="Edition(int,string)" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Property Name="Id:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Name:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="LicensingProduct" CoveredStatements="11" TotalStatements="14" CoveragePercent="79">
+        <Property Name="ActivationGroup:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateReleased:DateTime" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Description:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Edition:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MajorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MinorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="Support" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+        <Property Name="DateEntered:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateExpires:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InvoiceID:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InvoicePassword:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Exceptions" CoveredStatements="54" TotalStatements="54" CoveragePercent="100">
+      <Type Name="NoMatchingMachineHashDeactivationException" CoveredStatements="27" TotalStatements="27" CoveragePercent="100">
+        <Constructor Name="NoMatchingMachineHashDeactivationException()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="NoMatchingMachineHashDeactivationException(string)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="NoMatchingMachineHashDeactivationException(string,Exception)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="NoMatchingMachineHashDeactivationException(string,string)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Constructor Name="NoMatchingMachineHashDeactivationException(string,string,Exception)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Constructor Name="NoMatchingMachineHashDeactivationException(SerializationInfo,StreamingContext)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Property Name="MachineHash:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Method Name="GetObjectData(SerializationInfo,StreamingContext):void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+      <Type Name="NoMatchingProductDeactivationException" CoveredStatements="27" TotalStatements="27" CoveragePercent="100">
+        <Constructor Name="NoMatchingProductDeactivationException()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="NoMatchingProductDeactivationException(string)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="NoMatchingProductDeactivationException(string,Exception)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="NoMatchingProductDeactivationException(string,string)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Constructor Name="NoMatchingProductDeactivationException(string,string,Exception)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Constructor Name="NoMatchingProductDeactivationException(SerializationInfo,StreamingContext)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Property Name="MachineHash:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Method Name="GetObjectData(SerializationInfo,StreamingContext):void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Internal" CoveredStatements="271" TotalStatements="358" CoveragePercent="76">
+      <Type Name="ConnectionProvider" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+        <Constructor Name="ConnectionProvider(ISettingsManager)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="GetConnection():SqlConnection" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="DateTimeGenerator" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+        <Property Name="Now:DateTime" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="UtcNow:DateTime" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="RandomGenerator" CoveredStatements="27" TotalStatements="46" CoveragePercent="59">
+        <Method Name="CreateNew(int):byte[]" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="GenerateNumbersInRadix(int,byte):byte[]" CoveredStatements="22" TotalStatements="22" CoveragePercent="100" />
+        <Method Name="NativeCreateNew(int):byte[]" CoveredStatements="0" TotalStatements="19" CoveragePercent="0" />
+      </Type>
+      <Type Name="SerialNumberGenerator" CoveredStatements="55" TotalStatements="55" CoveragePercent="100">
+        <Constructor Name="SerialNumberGenerator(ISerialRepository,Func&lt;ProductCode,SerialNumberVersion&gt;)" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="GetNewSerialNumber(ProductCode,int):string" CoveredStatements="13" TotalStatements="13" CoveragePercent="100" />
+        <Method Name="GetSerialVersionForProduct(ProductCode):SerialNumberVersion" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="SerialExhaustedException(SerialNumberVersion):LicensingException" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="TryToGenerateSerialNumberV2(ProductCode,int):string" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="TryToGenerateSerialNumberV3(IRandomGenerator,Func&lt;int,Exception,int&gt;):string" CoveredStatements="17" TotalStatements="17" CoveragePercent="100" />
+        <Method Name="TryToGenerateSerialNumberV3():string" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="SerialNumberV3" CoveredStatements="72" TotalStatements="72" CoveragePercent="100">
+        <Constructor Name="SerialNumberV3(string)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Constructor Name="SerialNumberV3()" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Property Name="CorrectFormat:bool" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumberVersion:int" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="ValidChecksum:bool" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        </Property>
+        <Method Name="AddHyphenIfAtBlockSeparator(StringBuilder,int):void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="FillInChecksum(StringBuilder):void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="FromByteArray(byte[]):ISerialNumber" CoveredStatements="13" TotalStatements="13" CoveragePercent="100" />
+        <Method Name="FromRandomGenerator(IRandomGenerator):ISerialNumber" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GenerateChecksum(string,out char,out char):void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="ReplaceChecksumWithPlaceholder(StringBuilder):void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="RoundToCorrectBase(byte):char" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="ToString():string" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="VerifyChecksumCharacters(char,char):bool" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="SerialValidator" CoveredStatements="32" TotalStatements="33" CoveragePercent="97">
+        <Constructor Name="SerialValidator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        <Method Name="IsValid(string):bool" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="(SerialNumberVersion):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="IsValidSerialNumber(SerialNumberVersion,string):bool" CoveredStatements="12" TotalStatements="13" CoveragePercent="92" />
+        <Method Name="MatchesSerialNumberFormat(string,string,int):bool" CoveredStatements="13" TotalStatements="13" CoveragePercent="100" />
+      </Type>
+      <Type Name="Shared" CoveredStatements="72" TotalStatements="139" CoveragePercent="52">
+        <Method Name="ConvertItemsToTable&lt;T&gt;(IEnumerable&lt;T&gt;,IEnumerable&lt;string&gt;):DataTable" CoveredStatements="0" TotalStatements="31" CoveragePercent="0" />
+        <Method Name="ConvertItemsToTable(IList):DataTable" CoveredStatements="0" TotalStatements="27" CoveragePercent="0" />
+        <Method Name="CRC16(string):uint" CoveredStatements="21" TotalStatements="21" CoveragePercent="100" />
+        <Method Name="GetNiceName(LicensedProduct):string" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetNiceName(string,int,int,string):string" CoveredStatements="13" TotalStatements="17" CoveragePercent="76" />
+        <Method Name="HashesAreSimilar(string,string):bool" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="IsValidMachineHash(string):bool" CoveredStatements="13" TotalStatements="15" CoveragePercent="87" />
+        <Method Name="TryParseNullableGuid(string,out Nullable&lt;Guid&gt;):bool" CoveredStatements="13" TotalStatements="16" CoveragePercent="81" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Managers" CoveredStatements="543" TotalStatements="566" CoveragePercent="96">
+      <Type Name="ActivationManager" CoveredStatements="84" TotalStatements="85" CoveragePercent="99">
+        <Constructor Name="ActivationManager(IActivationRepository,ISerialRepository,IProductRepository,IJournalContainer,ISerialValidator)" CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+        <Method Name="AddActivations(string,int,ProductLicenseRecord,ReasonForActivationsChange,string):void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="AddExtraActivationsToGroup(string,string,int,ReasonForActivationsChange,string):void" CoveredStatements="27" TotalStatements="27" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="23" TotalStatements="23" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductLicenseRecord):bool" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        </Method>
+        <Method Name="AddExtraActivationsToSerialNumber(string,int,ReasonForActivationsChange,string):void" CoveredStatements="17" TotalStatements="17" CoveragePercent="100" />
+        <Method Name="DecreaseActivationsOfSerialNumber(string,int,ReasonForActivationsChange,string):void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetActivationAttempts(string):List&lt;ActivationAttempt&gt;" CoveredStatements="15" TotalStatements="16" CoveragePercent="94">
+          <OwnCoverage CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationEventRecord):ActivationAttempt" CoveredStatements="5" TotalStatements="6" CoveragePercent="83">
+            <OwnCoverage CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+            <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <AnonymousMethod Name="(ActivationAttemptTagRecord):ActivationTagValue" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          </AnonymousMethod>
+          <AnonymousMethod Name="(ActivationAttempt):DateTime" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="TransformEventTypeAndSuccessIntoCharacterCode(bool,bool):char" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+      </Type>
+      <Type Name="LatestVersionFinder" CoveredStatements="44" TotalStatements="44" CoveragePercent="100">
+        <Method Name="BoundProducts(IEnumerable&lt;ProductLicenseRecord&gt;,IEnumerable&lt;SupportRecord&gt;,IEnumerable&lt;ProductRecord&gt;,SerialKey,IReadOnlyCollection&lt;ActivationHashRecord&gt;):List&lt;BoundProduct&gt;" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductLicenseRecord):BoundProduct" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):ProductCode" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetLatestAllowedProduct(ProductLicenseRecord,IEnumerable&lt;SupportRecord&gt;,IEnumerable&lt;ProductRecord&gt;):ProductRecord" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):DateTime" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <OwnCoverage CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <AnonymousMethod Name="(SupportRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AnonymousMethod>
+        </Method>
+        <Method Name="LatestProductAsBoundProduct(ProductLicenseRecord,IEnumerable&lt;SupportRecord&gt;,IEnumerable&lt;ProductRecord&gt;,SerialKey,ILookup&lt;ProductCode,ActivationHashRecord&gt;):BoundProduct" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="LatestProductAsLicensedProduct(ProductLicenseRecord,IEnumerable&lt;SupportRecord&gt;,IEnumerable&lt;ProductRecord&gt;,ILookup&lt;ProductCode,ActivationHashRecord&gt;,bool):LicensedProduct" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="LicensedProducts(IEnumerable&lt;ProductLicenseRecord&gt;,IEnumerable&lt;SupportRecord&gt;,IEnumerable&lt;ProductRecord&gt;,IReadOnlyCollection&lt;ActivationHashRecord&gt;,bool):List&lt;LicensedProduct&gt;" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):ProductCode" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductLicenseRecord):LicensedProduct" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+      </Type>
+      <Type Name="LicensingContainer" CoveredStatements="36" TotalStatements="36" CoveragePercent="100">
+        <Constructor Name="LicensingContainer(ISettingsManager,IJournalContainer,IDateTimeGenerator,IQueueSink,ILog)" CoveredStatements="24" TotalStatements="24" CoveragePercent="100" />
+        <Property Name="ActivationManager:IActivationManager" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="LicensingManager:ILicensingManager" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumberManager:ISerialNumberManager" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="SupportManager:ISupportManager" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="LicensingManager" CoveredStatements="56" TotalStatements="56" CoveragePercent="100">
+        <Constructor Name="LicensingManager(IJournalContainer,IActivationManager,ISupportManager,ISerialNumberManager,IDateTimeGenerator)" CoveredStatements="18" TotalStatements="18" CoveragePercent="100" />
+        <Method Name="AddEntitlementsToSerialNumber(string,int):void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="GenerateLicenseForProductOnIntranet(int,string,int,int,DateTime,int,string,int,DateTime):string" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="():void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        </Method>
+        <Method Name="IsSerialNumberDisabled(string):bool" CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+        <Method Name="RenewalAllowed(string):bool" CoveredStatements="12" TotalStatements="12" CoveragePercent="100" />
+      </Type>
+      <Type Name="ProductManager" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Constructor Name="ProductManager(IProductRepository)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="GetLatestProducts():IEnumerable&lt;ProductRecord&gt;" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="ReleaseProduct(ProductRecord):void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="SerialNumberManager" CoveredStatements="249" TotalStatements="271" CoveragePercent="92">
+        <Constructor Name="SerialNumberManager(IJournalContainer,ISerialRepository,IProductRepository,IActivationRepository,ISupportRepository,ISerialNumberGenerator,ISerialValidator,IDateTimeGenerator)" CoveredStatements="11" TotalStatements="11" CoveragePercent="100" />
+        <Constructor Name="SerialNumberManager()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        <Method Name="AddUsersPurchasedToSerialNumber(string,int):void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="DisableSerialNumbers(string[],string):int" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="DisableSerialNumbers(string[],string,ReasonForDisable):int" CoveredStatements="14" TotalStatements="14" CoveragePercent="100" />
+        <Method Name="GetActivationsForLicenseType(LicenseTypeRecord,int):int" CoveredStatements="15" TotalStatements="17" CoveragePercent="88" />
+        <Method Name="GetBoundProducts(string):List&lt;BoundProduct&gt;" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="GetLatestPossibleVersion(string,int):Version" CoveredStatements="23" TotalStatements="23" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="22" TotalStatements="22" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductLicenseRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetLatestVersion(ProductCode,EditionId,Nullable&lt;int&gt;):ProductRecord" CoveredStatements="11" TotalStatements="11" CoveragePercent="100" />
+        <Method Name="GetLatestVersion(int,string,out int,out int):void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="GetMostRecentPurchaseDate(SerialKey):DateTime" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        <Method Name="GetNewSerialNumber(int,int):string" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetOrAddDistinctSerial(string):SerialId" CoveredStatements="10" TotalStatements="10" CoveragePercent="100" />
+        <Method Name="GetProductActivationGroup(int,int,int,int):string" CoveredStatements="10" TotalStatements="10" CoveragePercent="100" />
+        <Method Name="GetProductEditionId(string):EditionId" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="GetProductList():List&lt;LicensingProduct&gt;" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):LicensingProduct" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetProducts(SerialId):IEnumerable&lt;ProductLicenseRecord&gt;" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="GetSerialCreated(string,int):DateTime" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductLicenseRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetSerialCreated(string):DateTime" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductLicenseRecord):DateTime" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetSerialEntitlements(string):int" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetSerialId(string):SerialId" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="GetSerialIdOrNull(SerialKey):SerialId" CoveredStatements="0" TotalStatements="7" CoveragePercent="0" />
+        <Method Name="GetSerialIds(IEnumerable&lt;string&gt;):IEnumerable&lt;SerialId&gt;" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+          <AnonymousMethod Name="(string):SerialId" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetSerialNumber(SerialId):SerialKey" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        <Method Name="IsActivated(string,int):bool" CoveredStatements="0" TotalStatements="2" CoveragePercent="0" />
+        <Method Name="IsSerialNumberEnabled(string):bool" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="IsSerialNumberUpToDate(string):bool" CoveredStatements="16" TotalStatements="16" CoveragePercent="100" />
+        <Method Name="IsValidSerialNumber(string):bool" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="MarkSerialNumberAsTrialExtension(string):void" CoveredStatements="12" TotalStatements="12" CoveragePercent="100" />
+        <Method Name="ReEnableSerialNumber(string[],string,ReasonForEnable):int" CoveredStatements="14" TotalStatements="14" CoveragePercent="100" />
+        <Method Name="RegisterSerialNumber(string,int,int,string,int,string,string):void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        <Method Name="RegisterSerialNumber(string,int,int,string,int,string,string,int,DateTime):void" CoveredStatements="12" TotalStatements="12" CoveragePercent="100" />
+        <Method Name="RegisterSerialNumber(string,int,int,ProductCode,string,Version,int,string,DateTime):void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="ReRegisterSerialNumber(string,int,int,string,int,string,string,DateTime):void" CoveredStatements="0" TotalStatements="2" CoveragePercent="0" />
+      </Type>
+      <Type Name="SupportManager" CoveredStatements="62" TotalStatements="62" CoveragePercent="100">
+        <Constructor Name="SupportManager(ISupportRepository,ISerialRepository,IJournalContainer,IDateTimeGenerator)" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="AddSupport(string,DateTime,int,string):void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="AddSupport(string,DateTime):void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="CalendarMonthsBetween(DateTime,DateTime):int" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetMonthsRemaining(string):int" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="GetSerialId(string):SerialId" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="GetSupportExpiry(string):Nullable&lt;DateTime&gt;" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="15" TotalStatements="15" CoveragePercent="100" />
+          <AnonymousMethod Name="(SupportRecord):DateTime" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetSupportInformation(string):List&lt;Support&gt;" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+          <AnonymousMethod Name="(SupportRecord):DateTime" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(SupportRecord):Support" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="RemoveSupport(string,int):void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Properties" CoveredStatements="0" TotalStatements="7" CoveragePercent="0">
+      <Type Name="Settings" CoveredStatements="0" TotalStatements="7" CoveragePercent="0">
+        <Constructor Name="Settings()" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        <Property Name="Default:Settings" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="RedGateConnectionString:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Shims" CoveredStatements="135" TotalStatements="147" CoveragePercent="92">
+      <Type Name="ActivationShim" CoveredStatements="131" TotalStatements="132" CoveragePercent="99">
+        <Constructor Name="ActivationShim(ISerialRepository,ISupportRepository,IProductRepository,IActivationRepository,Func&lt;DateTime&gt;)" CoveredStatements="17" TotalStatements="18" CoveragePercent="94" />
+        <Method Name="Claim(Claim):void" CoveredStatements="49" TotalStatements="49" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="48" TotalStatements="48" CoveragePercent="100" />
+          <AnonymousMethod Name="(string):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="CountActivationFailures(string,IPAddress,DateTime,DateTime):int" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="Deactivate(ActivationDataRecord,SerialKey):void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetActivationHashes(SerialKey):IReadOnlyCollection&lt;ActivationHashRecord&gt;" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetLatestAllowedProduct(ProductLicenseRecord,IEnumerable&lt;SupportRecord&gt;,IEnumerable&lt;ProductRecord&gt;):ProductRecord" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):DateTime" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <OwnCoverage CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <AnonymousMethod Name="(SupportRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AnonymousMethod>
+        </Method>
+        <Method Name="GetLatestProducts():IReadOnlyCollection&lt;ProductRecord&gt;" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetLicence(SerialKeyLicenceToken):Licence" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="14" TotalStatements="14" CoveragePercent="100" />
+          <AnonymousMethod Name="(LicensedProduct):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(IGrouping&lt;string,LicensedProduct&gt;):ActivationGroup" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetLicensedProducts(IEnumerable&lt;ProductLicenseRecord&gt;,IEnumerable&lt;SupportRecord&gt;,IEnumerable&lt;ProductRecord&gt;,bool):List&lt;LicensedProduct&gt;" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductLicenseRecord):LicensedProduct" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetProduct(ProductCode,EditionId,Version):ProductRecord" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetProducts(SerialId):IReadOnlyCollection&lt;ProductLicenseRecord&gt;" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="GetSerialId(SerialKey):SerialId" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="LatestProductAsLicensedProduct(ProductLicenseRecord,IEnumerable&lt;SupportRecord&gt;,IEnumerable&lt;ProductRecord&gt;,bool):LicensedProduct" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="LogFailure(ActivationDataRecord,SerialKey):void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="ActivationShimFactory" CoveredStatements="0" TotalStatements="11" CoveragePercent="0">
+        <Constructor Name="ActivationShimFactory(ISettingsManager)" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+        <Method Name="Create():IActivationShim" CoveredStatements="0" TotalStatements="5" CoveragePercent="0">
+          <OwnCoverage CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+          <AnonymousMethod Name="():DateTime" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Method>
+      </Type>
+      <Type Name="MachineHashPair" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Property Name="Original:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Registered:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="NoMoreActivationsException" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+      <Type Name="TrialExtensionCannotBeReusedException" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+    </Namespace>
+  </Assembly>
+  <Assembly Name="RedGate.Licensing.Server.Activation.Core" CoveredStatements="551" TotalStatements="779" CoveragePercent="71">
+    <Namespace Name="RedGate.Licensing.Server.Activation.Core.Domain" CoveredStatements="62" TotalStatements="62" CoveragePercent="100">
+      <Type Name="ActivationRequest" CoveredStatements="29" TotalStatements="29" CoveragePercent="100">
+        <Constructor Name="ActivationRequest(string,string,string,Nullable&lt;Guid&gt;,int,string,IEnumerable&lt;ProductVersion&gt;,IEnumerable&lt;ActivationAttemptTagRecord&gt;)" CoveredStatements="21" TotalStatements="21" CoveragePercent="100" />
+        <Property Name="ClientVersion:int" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Locale:string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MachineHash:string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductActivationRequests:IReadOnlyCollection&lt;ProductVersion&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Session:Nullable&lt;Guid&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SessionText:string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Tags:IReadOnlyCollection&lt;ActivationAttemptTagRecord&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ActivationResponse" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+        <Property Name="ClientVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Edition:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MachineHash:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Products:IEnumerable&lt;LicensedProduct&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Session:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="DeactivationRequest" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+        <Property Name="ClientVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Locale:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MachinesHashes:List&lt;string&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductNames:List&lt;string&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ProductVersion" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+        <Constructor Name="ProductVersion(int,int,int)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Property Name="MajorVersion:int" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MinorVersion:int" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Activation.Core.Errors" CoveredStatements="46" TotalStatements="217" CoveragePercent="21">
+      <Type Name="ErrorDescriptions" CoveredStatements="8" TotalStatements="65" CoveragePercent="12">
+        <Constructor Name="ErrorDescriptions()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        <Property Name="AbusingMachineHash:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="Culture:CultureInfo" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidMachineHash:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidMachineHashDeactivation:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidProductCodeOrVersion:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidSerialNumber:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidSerialNumberDeactivation:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidSession:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="ProductsNotActivatedOnMachine:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="ResourceManager:ResourceManager" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumberDisabled:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="SerialNumberNotActivatedOnMachine:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="SerialNumberNotPresent:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="TooManyMachines:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="TooManyMachinesPreV2:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="WasTrialExtension:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="WrongProduct:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="WrongVersion:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+      </Type>
+      <Type Name="ErrorMessage" CoveredStatements="22" TotalStatements="22" CoveragePercent="100">
+        <Type Name="ErrorMessages" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Property Name="InternalDescription:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Property Name="TextMessage:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Property Name="XmlMessage:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+        </Type>
+        <Method Name="CreateDeactivationException(MessageEnum,int,IEnumerable&lt;string&gt;,string,ActivationSource,IPAddress,params object[]):InternalDeactivationException" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="GetErrorMessages(MessageEnum):ErrorMessages" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="ThrowActivationException(MessageEnum,ActivationRequest,ProductVersion,IPAddress,ActivationSource,DateTime,params object[]):void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="ThrowDeactivationException(MessageEnum,int,IEnumerable&lt;string&gt;,string,ActivationSource,IPAddress,params object[]):void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100" />
+      </Type>
+      <Type Name="ErrorTextMessages" CoveredStatements="8" TotalStatements="65" CoveragePercent="12">
+        <Constructor Name="ErrorTextMessages()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        <Property Name="AbusingMachineHash:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="Culture:CultureInfo" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidMachineHash:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidMachineHashDeactivation:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidProductCodeOrVersion:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidSerialNumber:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidSerialNumberDeactivation:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidSession:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="ProductsNotActivatedOnMachine:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="ResourceManager:ResourceManager" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumberDisabled:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="SerialNumberNotActivatedOnMachine:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="SerialNumberNotPresent:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="TooManyMachines:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="TooManyMachinesPreV2:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="WasTrialExtension:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="WrongProduct:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="WrongVersion:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+      </Type>
+      <Type Name="ErrorXmlMessages" CoveredStatements="8" TotalStatements="65" CoveragePercent="12">
+        <Constructor Name="ErrorXmlMessages()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        <Property Name="AbusingMachineHash:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="Culture:CultureInfo" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidMachineHash:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidMachineHashDeactivation:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidProductCodeOrVersion:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidSerialNumber:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidSerialNumberDeactivation:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="InvalidSession:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="ProductsNotActivatedOnMachine:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="ResourceManager:ResourceManager" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumberDisabled:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="SerialNumberNotActivatedOnMachine:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="SerialNumberNotPresent:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="TooManyMachines:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="TooManyMachinesPreV2:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="WasTrialExtension:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="WrongProduct:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+        <Property Name="WrongVersion:string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Property>
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Activation.Core.Exceptions" CoveredStatements="77" TotalStatements="81" CoveragePercent="95">
+      <Type Name="ActivationException" CoveredStatements="9" TotalStatements="12" CoveragePercent="75">
+        <Constructor Name="ActivationException(string,string,string,int)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Property Name="ClientVersion:int" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InternalDescription:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="XMLMessage:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="BlankSerialException" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+        <Constructor Name="BlankSerialException(string,string,string,int,IEnumerable&lt;string&gt;,string,ActivationSource,IPAddress)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="InternalActivationException" CoveredStatements="41" TotalStatements="42" CoveragePercent="98">
+        <Constructor Name="InternalActivationException(string,string,string,ActivationRequest,ProductVersion,IPAddress,ActivationSource,DateTime)" CoveredStatements="16" TotalStatements="16" CoveragePercent="100" />
+        <Property Name="ActivationSource:ActivationSource" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ClientVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateTime:DateTime" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InternalDescription:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Ip:IPAddress" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MachineHash:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MajorVersion:Nullable&lt;int&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductActivationRequests:IEnumerable&lt;ProductVersion&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:ProductCode" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialKey:SerialKey" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Session:Nullable&lt;Guid&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Tags:IEnumerable&lt;ActivationAttemptTagRecord&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="XMLMessage:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="InternalDeactivationException" CoveredStatements="24" TotalStatements="24" CoveragePercent="100">
+        <Constructor Name="InternalDeactivationException(string,string,string,int,IEnumerable&lt;string&gt;,string,ActivationSource,IPAddress)" CoveredStatements="10" TotalStatements="10" CoveragePercent="100" />
+        <Property Name="ActivationSource:ActivationSource" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ClientVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InternalDescription:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="IpAddress:IPAddress" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MachinesHashes:IEnumerable&lt;string&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="XMLMessage:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Activation.Core.Managers" CoveredStatements="366" TotalStatements="419" CoveragePercent="87">
+      <Type Name="ActivationManager" CoveredStatements="300" TotalStatements="352" CoveragePercent="85">
+        <Constructor Name="ActivationManager(ISettingsManager,IDateTimeGenerator,ILog,ISerialValidator,IActivationShim,IQueueSink)" CoveredStatements="15" TotalStatements="21" CoveragePercent="71" />
+        <Method Name="ActivateLicence(ActivationRequest,string,Source):ActivationResponse" CoveredStatements="44" TotalStatements="48" CoveragePercent="92">
+          <OwnCoverage CoveredStatements="36" TotalStatements="39" CoveragePercent="92" />
+          <AnonymousMethod Name="(MessageEnum,ProductVersion,object[]):void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67" />
+          <AnonymousMethod Name="(MessageEnum,object[]):void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(LicensedProduct):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductVersion):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationGroup):bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <OwnCoverage CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <AnonymousMethod Name="(LicensedProduct):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AnonymousMethod>
+          <AnonymousMethod Name="(ActivationGroup):IEnumerable&lt;LicensedProduct&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="CheckForAbuse(string,IPAddress,Action&lt;MessageEnum,object[]&gt;):void" CoveredStatements="15" TotalStatements="28" CoveragePercent="54" />
+        <Method Name="ClaimTheRequestedVersion(LicensedProduct,ProductVersion):LicensedProduct" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="DeactivateForRegisteredMachineHash(IPAddress,ActivationSource,string,string,IReadOnlyCollection&lt;ProductRecord&gt;,IReadOnlyCollection&lt;string&gt;,string):void" CoveredStatements="24" TotalStatements="24" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="19" TotalStatements="19" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):ProductCode" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(string):bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <OwnCoverage CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AnonymousMethod>
+          <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <OwnCoverage CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <AnonymousMethod Name="(string):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AnonymousMethod>
+        </Method>
+        <Method Name="DeactivateForRegisteredMachineHash(IPAddress,ActivationSource,string,string,IReadOnlyCollection&lt;ActivationHashRecord&gt;,string):void" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="13" TotalStatements="13" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):ProductCode" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductCode):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="DeactivateLicence(DeactivationRequest,string,Source):void" CoveredStatements="27" TotalStatements="31" CoveragePercent="87">
+          <OwnCoverage CoveredStatements="26" TotalStatements="30" CoveragePercent="87" />
+          <AnonymousMethod Name="(string):MachineHashPair" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="EnsureClaimIsForEntitledVersion(LicensedProduct,ProductVersion,Action&lt;MessageEnum,ProductVersion,object[]&gt;,ProductVersion):void" CoveredStatements="5" TotalStatements="6" CoveragePercent="83" />
+        <Method Name="GetActivatedProducts(SerialKey,IReadOnlyCollection&lt;ActivationHashRecord&gt;):IEnumerable&lt;ProductRecord&gt;" CoveredStatements="11" TotalStatements="14" CoveragePercent="79">
+          <OwnCoverage CoveredStatements="7" TotalStatements="10" CoveragePercent="70" />
+          <AnonymousMethod Name="(ProductLicenseRecord):ProductRecord" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):ProductCode" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductLicenseRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetLicenceBySerialKey(SerialKey,Action&lt;MessageEnum,ProductVersion,object[]&gt;,ProductVersion,ActivationRequest):Licence" CoveredStatements="10" TotalStatements="15" CoveragePercent="67" />
+        <Method Name="GetProductName(int):string" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetRegisteredMachineHash(string,bool,IEnumerable&lt;ActivationHashRecord&gt;):string" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationHashRecord):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(string):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetRequestToUse(IEnumerable&lt;ProductVersion&gt;,IEnumerable&lt;LicensedProduct&gt;,Action&lt;MessageEnum,ProductVersion,object[]&gt;):ProductVersion" CoveredStatements="11" TotalStatements="12" CoveragePercent="92">
+          <OwnCoverage CoveredStatements="9" TotalStatements="10" CoveragePercent="90" />
+          <AnonymousMethod Name="(ProductVersion):bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <OwnCoverage CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <AnonymousMethod Name="(LicensedProduct):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AnonymousMethod>
+        </Method>
+        <Method Name="GetWhichProductsToClaimBasedOnClientVersion(int,IEnumerable&lt;LicensedProduct&gt;,LicensedProduct):IEnumerable&lt;LicensedProduct&gt;" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+          <AnonymousMethod Name="(LicensedProduct):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="MessageIfActivationGroupsDoNotOverlapProperly(string,IReadOnlyCollection&lt;ProductRecord&gt;,IReadOnlyCollection&lt;string&gt;,string,ProductRecord[]):void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductRecord):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="ParseIpAddress(string):IPAddress" CoveredStatements="8" TotalStatements="11" CoveragePercent="73" />
+        <Method Name="ReleaseLicence(IReadOnlyCollection&lt;ActivationHashRecord&gt;,ActivationSource,IPAddress,List&lt;ProductRecord&gt;,IReadOnlyCollection&lt;MachineHashPair&gt;,IReadOnlyCollection&lt;string&gt;,string):void" CoveredStatements="27" TotalStatements="30" CoveragePercent="90" />
+        <Method Name="ToSerializableLicensedProducts(IEnumerable&lt;ILicensedProduct&gt;):IEnumerable&lt;LicensedProduct&gt;" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+          <AnonymousMethod Name="(ILicensedProduct):LicensedProduct" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="ValidateDeactivationRequest(DeactivationRequest,IPAddress,ActivationSource):void" CoveredStatements="26" TotalStatements="30" CoveragePercent="87" />
+        <Method Name="ValidateSomeRequestValues(IEnumerable&lt;ProductVersion&gt;,Action&lt;MessageEnum,ProductVersion,object[]&gt;,ActivationRequest):void" CoveredStatements="15" TotalStatements="20" CoveragePercent="75" />
+      </Type>
+      <Type Name="FailureLoggingActivationManager" CoveredStatements="40" TotalStatements="40" CoveragePercent="100">
+        <Constructor Name="FailureLoggingActivationManager(IActivationManager,IActivationShim,ILog,IDateTimeGenerator)" CoveredStatements="15" TotalStatements="15" CoveragePercent="100" />
+        <Method Name="ActivateLicence(ActivationRequest,string,Source):ActivationResponse" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="DeactivateLicence(DeactivationRequest,string,Source):void" CoveredStatements="16" TotalStatements="16" CoveragePercent="100" />
+      </Type>
+      <Type Name="ThrottlingActivationManager" CoveredStatements="26" TotalStatements="27" CoveragePercent="96">
+        <Constructor Name="ThrottlingActivationManager(IActivationManager,ISettingsManager,IDateTimeGenerator)" CoveredStatements="12" TotalStatements="12" CoveragePercent="100" />
+        <Method Name="ActivateLicence(ActivationRequest,string,Source):ActivationResponse" CoveredStatements="10" TotalStatements="11" CoveragePercent="91" />
+        <Method Name="DeactivateLicence(DeactivationRequest,string,Source):void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="RedGate.Licensing.Server.ActivationWebService" CoveredStatements="46" TotalStatements="173" CoveragePercent="27">
+    <Namespace Name="RedGate.Licensing.Server.ActivationWebService" CoveredStatements="46" TotalStatements="173" CoveragePercent="27">
+      <Type Name="ActivationService" CoveredStatements="8" TotalStatements="88" CoveragePercent="9">
+        <Constructor Name="ActivationService(ILoggingSerializerFactory,IActivationManager,IQueueSink)" CoveredStatements="8" TotalStatements="12" CoveragePercent="67" />
+        <Method Name="ActivateLicence(string,out string,out string):bool" CoveredStatements="0" TotalStatements="38" CoveragePercent="0" />
+        <Method Name="DeactivateLicence(string,out string):bool" CoveredStatements="0" TotalStatements="35" CoveragePercent="0" />
+        <Method Name="SubmitEmptyMetric(string):void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+      </Type>
+      <Type Name="ErrorHandlingServiceBehaviour" CoveredStatements="17" TotalStatements="21" CoveragePercent="81">
+        <Constructor Name="ErrorHandlingServiceBehaviour(IErrorHandler)" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="AddBindingParameters(ServiceDescription,ServiceHostBase,Collection&lt;ServiceEndpoint&gt;,BindingParameterCollection):void" CoveredStatements="0" TotalStatements="2" CoveragePercent="0" />
+        <Method Name="ApplyDispatchBehavior(ServiceDescription,ServiceHostBase):void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100" />
+        <Method Name="Validate(ServiceDescription,ServiceHostBase):void" CoveredStatements="0" TotalStatements="2" CoveragePercent="0" />
+      </Type>
+      <Type Name="Global" CoveredStatements="0" TotalStatements="17" CoveragePercent="0">
+        <Method Name="Application_End(object,EventArgs):void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        <Method Name="Application_Start(object,EventArgs):void" CoveredStatements="0" TotalStatements="14" CoveragePercent="0" />
+      </Type>
+      <Type Name="LoggingErrorHandler" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Constructor Name="LoggingErrorHandler(ILog)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="HandleError(Exception):bool" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="ProvideFault(Exception,MessageVersion,ref Message):void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="ServiceFactory" CoveredStatements="9" TotalStatements="35" CoveragePercent="26">
+        <Constructor Name="ServiceFactory(ISettingsManager,IQueueSink,ILog)" CoveredStatements="9" TotalStatements="13" CoveragePercent="69" />
+        <Method Name="CreateCustomServiceHost(Type,Uri[]):ServiceHost" CoveredStatements="0" TotalStatements="16" CoveragePercent="0" />
+        <Method Name="CreateServiceHost(Type,Uri[]):ServiceHost" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="RedGate.Licensing.Server.Data" CoveredStatements="748" TotalStatements="809" CoveragePercent="92">
+    <Namespace Name="RedGate.Licensing.Server.Data.Bindings" CoveredStatements="175" TotalStatements="187" CoveragePercent="94">
+      <Type Name="ActivationAttemptBinding" CoveredStatements="30" TotalStatements="30" CoveragePercent="100">
+        <Property Name="ActivationAttemptId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ActivationAttemptTags:ICollection&lt;ActivationAttemptTagBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="AttemptedMachineHashCode:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ClientMajorVersion:Nullable&lt;int&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateOfAttempt:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ErrorMessage:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Fingerprints:ICollection&lt;ActivationAttemptFingerprintBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="IpAddress:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MessageVersion:Nullable&lt;int&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:Nullable&lt;int&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="RegisteredMachineHashCode:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Session:Nullable&lt;Guid&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Source:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Success:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ActivationAttemptFingerprintBinding" CoveredStatements="0" TotalStatements="12" CoveragePercent="0">
+        <Property Name="ActivationAttempt:ActivationAttemptBinding" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="ActivationAttemptId:int" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="Fingerprint:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="FingerprintId:int" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="InstallDate:DateTime" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="IsPrimary:bool" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+      </Type>
+      <Type Name="ActivationAttemptTagBinding" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Property Name="ActivationAttempt:ActivationAttemptBinding" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ActivationAttemptId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateCreated:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="TagId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="TagName:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="TagValue:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="CurrentSerialIdBinding" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Property Name="PrimaryKey:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="DistinctSerialBinding" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+        <Property Name="Enabled:bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="InteractionType" CoveredStatements="18" TotalStatements="18" CoveragePercent="100">
+        <Constructor Name="InteractionType(string)" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Property Name="AsString:string" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="IsCurrentActivation:bool" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="WasSuccessfulActivationOrDeactivation:bool" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="IsTrialStatus" CoveredStatements="20" TotalStatements="20" CoveragePercent="100">
+        <Constructor Name="IsTrialStatus(string)" CoveredStatements="10" TotalStatements="10" CoveragePercent="100" />
+        <Constructor Name="IsTrialStatus(bool)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Property Name="AsBool:bool" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="AsSingleCharacter:string" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="LicenseTypeBinding" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+        <Property Name="FixedActivationLimit:Nullable&lt;int&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="LicenseTypeId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Name:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="PerEntitlementActivationOffset:Nullable&lt;int&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ProductBinding" CoveredStatements="25" TotalStatements="25" CoveragePercent="100">
+        <Property Name="ActivationGroup:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="AllowDeactivation:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateReleased:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Description:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="LicenceTypeId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="LicenseType:LicenseTypeBinding" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MajorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MinorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductEdition:ProductEditionBinding" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductEditionId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Version:Version" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ProductEditionBinding" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+        <Property Name="DisplayName:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Name:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductEditionId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ProductLicenseBinding" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+        <Property Name="ActivationsAllocated:Nullable&lt;int&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ActivationsAllowed:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateCreated:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Entitlements:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Id:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InvoiceId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InvoicePassword:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="IsExtension:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MajorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MinorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Notes:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductEditionId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ProductSerialVersionBinding" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+        <Property Name="ProductId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductSerialVersionId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="SupportBinding" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Property Name="DateEntered:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateExpires:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InvoiceId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="InvoicePassword:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SupportId:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Data.Repositories" CoveredStatements="573" TotalStatements="622" CoveragePercent="92">
+      <Type Name="ActivationRepository" CoveredStatements="115" TotalStatements="131" CoveragePercent="88">
+        <Type Name="DatabaseContext" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Constructor Name="DatabaseContext(string)" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <Property Name="ActivationAttempts:DbSet&lt;ActivationAttemptBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Method Name="OnModelCreating(DbModelBuilder):void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        </Type>
+        <Constructor Name="ActivationRepository(string)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="():DatabaseContext" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Constructor>
+        <Method Name="Activate(ActivationDataRecord,SerialKey):void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="CountActivationFailures(string,IPAddress,DateTime,DateTime):int" CoveredStatements="9" TotalStatements="12" CoveragePercent="75" />
+        <Method Name="Deactivate(ActivationDataRecord,SerialKey):void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100" />
+        <Method Name="DeactivatePreviouslySuccessfulActivations(string,SerialKey,ProductCode):void" CoveredStatements="16" TotalStatements="19" CoveragePercent="84" />
+        <Method Name="GetActivationHashes(SerialKey):IReadOnlyCollection&lt;ActivationHashRecord&gt;" CoveredStatements="12" TotalStatements="16" CoveragePercent="75">
+          <OwnCoverage CoveredStatements="8" TotalStatements="12" CoveragePercent="67" />
+          <AnonymousMethod Name="({string,Nullable&lt;int&gt;,string}):{string,Nullable&lt;int&gt;}" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(IGrouping&lt;{string,Nullable&lt;int&gt;},{string,Nullable&lt;int&gt;,string}&gt;):{string,Nullable&lt;int&gt;,string}" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <OwnCoverage CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <AnonymousMethod Name="({string,Nullable&lt;int&gt;,string}):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </AnonymousMethod>
+          <AnonymousMethod Name="({string,Nullable&lt;int&gt;,string}):ActivationHashRecord" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetActivationHistory(SerialKey,int):IReadOnlyCollection&lt;ActivationEventRecord&gt;" CoveredStatements="13" TotalStatements="16" CoveragePercent="81" />
+        <Method Name="LogActivationAttempt(ActivationDataRecord,SerialKey,InteractionType):void" CoveredStatements="9" TotalStatements="12" CoveragePercent="75" />
+        <Method Name="LogFailure(ActivationDataRecord,SerialKey):void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+        <Method Name="TagToBinding(ActivationAttemptTagRecord):ActivationAttemptTagBinding" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="TagToRecord(ActivationAttemptTagBinding):ActivationAttemptTagRecord" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="ToBinding(ActivationDataRecord,SerialKey,InteractionType):ActivationAttemptBinding" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="ToHistoricRecord(ActivationAttemptBinding):ActivationEventRecord" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+      </Type>
+      <Type Name="ProductRepository" CoveredStatements="121" TotalStatements="147" CoveragePercent="82">
+        <Type Name="DatabaseContext" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+          <Constructor Name="DatabaseContext(string)" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <Property Name="ProductEditions:DbSet&lt;ProductEditionBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Property Name="Products:DbSet&lt;ProductBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Method Name="OnModelCreating(DbModelBuilder):void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        </Type>
+        <Constructor Name="ProductRepository(string)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="():DatabaseContext" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Constructor>
+        <Method Name="AddProduct(ProductRecord):void" CoveredStatements="15" TotalStatements="19" CoveragePercent="79" />
+        <Method Name="GetAllProducts():IReadOnlyCollection&lt;ProductRecord&gt;" CoveredStatements="6" TotalStatements="9" CoveragePercent="67" />
+        <Method Name="GetLatestProducts():IReadOnlyCollection&lt;ProductRecord&gt;" CoveredStatements="6" TotalStatements="9" CoveragePercent="67" />
+        <Method Name="GetLatestVersion(ProductCode,EditionId):Version" CoveredStatements="15" TotalStatements="19" CoveragePercent="79">
+          <OwnCoverage CoveredStatements="14" TotalStatements="18" CoveragePercent="78" />
+          <AnonymousMethod Name="(ProductBinding):Version" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="GetProduct(ProductCode,EditionId,Version):ProductRecord" CoveredStatements="17" TotalStatements="21" CoveragePercent="81" />
+        <Method Name="GetProductEditionId(string):EditionId" CoveredStatements="13" TotalStatements="17" CoveragePercent="76" />
+        <Method Name="HasSamePrimaryKey(ProductBinding):Expression&lt;Func&lt;ProductBinding,bool&gt;&gt;" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="LatestProductWithMajorVersion(ProductCode,EditionId,int):ProductRecord" CoveredStatements="15" TotalStatements="19" CoveragePercent="79" />
+        <Method Name="ToBinding(ProductRecord):ProductBinding" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="ToRecord(ProductBinding):ProductRecord" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="ToRecord(LicenseTypeBinding):LicenseTypeRecord" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="ToRecord(ProductEditionBinding):ProductEditionRecord" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="SerialRepository" CoveredStatements="276" TotalStatements="277" CoveragePercent="99">
+        <Type Name="DatabaseContext" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
+          <Constructor Name="DatabaseContext(string)" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <Property Name="CurrentSerialIds:DbSet&lt;CurrentSerialIdBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Property Name="DistinctSerials:DbSet&lt;DistinctSerialBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Property Name="ProductSerialVersions:DbSet&lt;ProductSerialVersionBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Property Name="PurchasedSerials:DbSet&lt;ProductLicenseBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Method Name="OnModelCreating(DbModelBuilder):void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        </Type>
+        <Constructor Name="SerialRepository(string)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="():DatabaseContext" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Constructor>
+        <Constructor Name="SerialRepository(Func&lt;DatabaseContext&gt;)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="AddSerial(SerialKey):SerialId" CoveredStatements="16" TotalStatements="16" CoveragePercent="100" />
+        <Method Name="GetMostRecentPurchaseDate(SerialKey):DateTime" CoveredStatements="15" TotalStatements="15" CoveragePercent="100" />
+        <Method Name="GetNextV2SerialId():SerialId" CoveredStatements="16" TotalStatements="16" CoveragePercent="100" />
+        <Method Name="GetProducts(InvoiceId):IReadOnlyCollection&lt;ProductLicenseRecord&gt;" CoveredStatements="11" TotalStatements="11" CoveragePercent="100" />
+        <Method Name="GetProducts(SerialId):IReadOnlyCollection&lt;ProductLicenseRecord&gt;" CoveredStatements="15" TotalStatements="15" CoveragePercent="100" />
+        <Method Name="GetSerialId(SerialKey):SerialId" CoveredStatements="15" TotalStatements="15" CoveragePercent="100" />
+        <Method Name="GetSerialKey(SerialId):SerialKey" CoveredStatements="15" TotalStatements="15" CoveragePercent="100" />
+        <Method Name="GetSerialVersion(ProductCode):int" CoveredStatements="12" TotalStatements="12" CoveragePercent="100" />
+        <Method Name="IsSerialEnabled(SerialId):bool" CoveredStatements="12" TotalStatements="12" CoveragePercent="100" />
+        <Method Name="RegisterProductAgainstSerial(ProductLicenseRecord):SerialId" CoveredStatements="14" TotalStatements="14" CoveragePercent="100" />
+        <Method Name="SetActivationLimit(SerialId,ProductCode,int):void" CoveredStatements="20" TotalStatements="20" CoveragePercent="100" />
+        <Method Name="SetMaxEntitlements(SerialId,int):void" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="27" TotalStatements="27" CoveragePercent="100" />
+          <AnonymousMethod Name="(ProductLicenseBinding):int" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="SetSerialEnabled(SerialId,bool):void" CoveredStatements="18" TotalStatements="18" CoveragePercent="100" />
+        <Method Name="ToBinding(ProductLicenseRecord):ProductLicenseBinding" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="ToRecord(ProductLicenseBinding):ProductLicenseRecord" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="UpdateRegisteredProduct(ProductLicenseRecord):void" CoveredStatements="30" TotalStatements="31" CoveragePercent="97" />
+        <Method Name="WithBadDatabaseConnection():SerialRepository" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+          <AnonymousMethod Name="():DatabaseContext" CoveredStatements="2" TotalStatements="2" CoveragePercent="100" />
+        </Method>
+      </Type>
+      <Type Name="SupportRepository" CoveredStatements="61" TotalStatements="67" CoveragePercent="91">
+        <Type Name="DatabaseContext" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Constructor Name="DatabaseContext(string)" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <Property Name="Support:DbSet&lt;SupportBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+            <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          </Property>
+          <Method Name="OnModelCreating(DbModelBuilder):void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        </Type>
+        <Constructor Name="SupportRepository(string)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="():DatabaseContext" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Constructor>
+        <Method Name="AddSupport(SupportRecord):SupportId" CoveredStatements="11" TotalStatements="14" CoveragePercent="79" />
+        <Method Name="GetSupport(SerialId):IReadOnlyCollection&lt;SupportRecord&gt;" CoveredStatements="11" TotalStatements="11" CoveragePercent="100" />
+        <Method Name="RemoveSupport(SerialId,InvoiceId):void" CoveredStatements="19" TotalStatements="22" CoveragePercent="86" />
+        <Method Name="ToRecord(SupportBinding):SupportRecord" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="RedGate.Licensing.Server.Model" CoveredStatements="314" TotalStatements="337" CoveragePercent="93">
+    <Namespace Name="RedGate.Licensing.Server.Model" CoveredStatements="74" TotalStatements="76" CoveragePercent="97">
+      <Type Name="ActivationGroup" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+        <Property Name="Products:IEnumerable&lt;LicensedProduct&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="AuditCruft" CoveredStatements="18" TotalStatements="18" CoveragePercent="100">
+        <Property Name="ActivationSource:ActivationSource" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="AttemptedMachineHash:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ClientVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="IpAddress:IPAddress" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MainProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MainProductMajorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="RegisteredMachineHash:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Session:Nullable&lt;Guid&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Tags:IEnumerable&lt;ActivationAttemptTagRecord&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="Claim" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+        <Constructor Name="Claim(LegacyIdentityToken,SerialKeyLicenceToken,List&lt;LicensedProduct&gt;,AuditCruft)" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+      </Type>
+      <Type Name="LegacyIdentityToken" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+        <Constructor Name="LegacyIdentityToken(string,string)" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+      </Type>
+      <Type Name="Licence" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Property Name="ActivationGroups:IEnumerable&lt;ActivationGroup&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="IsEnabled:bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="LicenceToken" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+        <Property Name="Value:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="LicensedProduct" CoveredStatements="30" TotalStatements="31" CoveragePercent="97">
+        <Property Name="ActivatedMachineHashes:List&lt;string&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ActivationGroup:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ActivationsAllowed:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ActivationsMade:int" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="AllActivationAttempts:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="DateCreated:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Edition:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="EditionDisplayName:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Enabled:bool" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="IsExtension:bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MajorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MinorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductDescription:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="UsersPurchased:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="SerialKeyLicenceToken" CoveredStatements="6" TotalStatements="7" CoveragePercent="86">
+        <Constructor Name="SerialKeyLicenceToken(string)" CoveredStatements="6" TotalStatements="7" CoveragePercent="86" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Model.Exceptions" CoveredStatements="36" TotalStatements="36" CoveragePercent="100">
+      <Type Name="DuplicateRecordExistsException" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Constructor Name="DuplicateRecordExistsException()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="DuplicateRecordExistsException(string)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="DuplicateRecordExistsException(string,Exception)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="DuplicateRecordExistsException(SerializationInfo,StreamingContext)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="LicensingServerException" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Constructor Name="LicensingServerException()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="LicensingServerException(string)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="LicensingServerException(string,Exception)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="LicensingServerException(SerializationInfo,StreamingContext)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="RecordNotFoundException" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Constructor Name="RecordNotFoundException()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="RecordNotFoundException(string)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="RecordNotFoundException(string,Exception)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="RecordNotFoundException(SerializationInfo,StreamingContext)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Model.Identifiers" CoveredStatements="72" TotalStatements="92" CoveragePercent="78">
+      <Type Name="ActivationAttemptId" CoveredStatements="0" TotalStatements="4" CoveragePercent="0">
+        <Constructor Name="ActivationAttemptId(int)" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+      </Type>
+      <Type Name="EditionId" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Constructor Name="EditionId(int)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+      <Type Name="InvoiceId" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Constructor Name="InvoiceId(int)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+      <Type Name="LicenseTypeId" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+        <Constructor Name="LicenseTypeId(int)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Property Name="Value:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ProductCode" CoveredStatements="29" TotalStatements="32" CoveragePercent="91">
+        <Constructor Name="ProductCode(int)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="Equals(ProductCode):bool" CoveredStatements="6" TotalStatements="7" CoveragePercent="86" />
+        <Method Name="Equals(object):bool" CoveredStatements="7" TotalStatements="9" CoveragePercent="78" />
+        <Method Name="GetHashCode():int" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="op_Equality(ProductCode,ProductCode):bool" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="op_Inequality(ProductCode,ProductCode):bool" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="ToString():string" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="SerialId" CoveredStatements="19" TotalStatements="32" CoveragePercent="59">
+        <Constructor Name="SerialId(int)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="Equals(SerialId):bool" CoveredStatements="5" TotalStatements="7" CoveragePercent="71" />
+        <Method Name="Equals(object):bool" CoveredStatements="7" TotalStatements="9" CoveragePercent="78" />
+        <Method Name="GetHashCode():int" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        <Method Name="op_Equality(SerialId,SerialId):bool" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Method Name="op_Inequality(SerialId,SerialId):bool" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        <Method Name="ToString():string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+      </Type>
+      <Type Name="SerialKey" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+        <Constructor Name="SerialKey(string)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+      </Type>
+      <Type Name="SupportId" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Constructor Name="SupportId(int)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Model.Records" CoveredStatements="132" TotalStatements="133" CoveragePercent="99">
+      <Type Name="ActivationAttemptTagRecord" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+        <Constructor Name="ActivationAttemptTagRecord(string,string,DateTime)" CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+      </Type>
+      <Type Name="ActivationDataRecord" CoveredStatements="22" TotalStatements="22" CoveragePercent="100">
+        <Constructor Name="ActivationDataRecord(DateTime,string,string,string,ProductCode,Nullable&lt;Guid&gt;,IPAddress,ActivationSource,Nullable&lt;int&gt;,Nullable&lt;int&gt;,IEnumerable&lt;ActivationAttemptTagRecord&gt;)" CoveredStatements="18" TotalStatements="18" CoveragePercent="100" />
+        <Method Name="ToString():string" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationAttemptTagRecord):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+      </Type>
+      <Type Name="ActivationEventRecord" CoveredStatements="7" TotalStatements="8" CoveragePercent="88">
+        <Constructor Name="ActivationEventRecord(ActivationDataRecord,bool,bool)" CoveredStatements="7" TotalStatements="8" CoveragePercent="88" />
+      </Type>
+      <Type Name="ActivationHashRecord" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+        <Constructor Name="ActivationHashRecord(string,ProductCode,bool)" CoveredStatements="10" TotalStatements="10" CoveragePercent="100" />
+      </Type>
+      <Type Name="LicenseTypeRecord" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+        <Constructor Name="LicenseTypeRecord(LicenseTypeId,string,Nullable&lt;int&gt;,Nullable&lt;int&gt;)" CoveredStatements="11" TotalStatements="11" CoveragePercent="100" />
+      </Type>
+      <Type Name="ProductEditionRecord" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Constructor Name="ProductEditionRecord(EditionId,string,string)" CoveredStatements="12" TotalStatements="12" CoveragePercent="100" />
+      </Type>
+      <Type Name="ProductLicenseRecord" CoveredStatements="25" TotalStatements="25" CoveragePercent="100">
+        <Constructor Name="ProductLicenseRecord(ProductCode,EditionId,Version,int,int,Nullable&lt;int&gt;,bool,SerialId,InvoiceId,string,DateTime,string)" CoveredStatements="25" TotalStatements="25" CoveragePercent="100" />
+      </Type>
+      <Type Name="ProductRecord" CoveredStatements="23" TotalStatements="23" CoveragePercent="100">
+        <Constructor Name="ProductRecord(ProductCode,Version,ProductEditionRecord,LicenseTypeRecord,string,bool,string,DateTime)" CoveredStatements="23" TotalStatements="23" CoveragePercent="100" />
+      </Type>
+      <Type Name="SupportRecord" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+        <Constructor Name="SupportRecord(DateTime,DateTime,SerialId,InvoiceId,string)" CoveredStatements="14" TotalStatements="14" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="RedGate.Licensing.Server.Serialization" CoveredStatements="419" TotalStatements="435" CoveragePercent="96">
+    <Namespace Name="RedGate.Licensing.Server.Serialization" CoveredStatements="53" TotalStatements="54" CoveragePercent="98">
+      <Type Name="LoggingSerializerFactory" CoveredStatements="19" TotalStatements="20" CoveragePercent="95">
+        <Constructor Name="LoggingSerializerFactory(IDataSigner,IQueueSink,ILog,string)" CoveredStatements="13" TotalStatements="13" CoveragePercent="100" />
+        <Method Name="CreateActivationSerializer(string):IActivationSerializer" CoveredStatements="3" TotalStatements="4" CoveragePercent="75">
+          <OwnCoverage CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+          <AnonymousMethod Name="():DateTime" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Method>
+        <Method Name="CreateDeactivationSerializer():IDeactivationSerializer" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="RsaDataSigner" CoveredStatements="34" TotalStatements="34" CoveragePercent="100">
+        <Constructor Name="RsaDataSigner(string,string)" CoveredStatements="21" TotalStatements="21" CoveragePercent="100" />
+        <Method Name="CreateRsaCryptoServiceProvider(string):RSACryptoServiceProvider" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="Sign(byte[]):byte[]" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="Verify(byte[],byte[]):bool" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Serialization.Bindings" CoveredStatements="70" TotalStatements="74" CoveragePercent="95">
+      <Type Name="ActivationRequestBinding" CoveredStatements="18" TotalStatements="18" CoveragePercent="100">
+        <Property Name="ClientVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Custom:CustomSectionBinding" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Locale:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MachineHash:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MajorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MinorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Session:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ActivationResponseBinding" CoveredStatements="13" TotalStatements="14" CoveragePercent="93">
+        <Property Name="ClientVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Edition:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MachineHash:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Products:IEnumerable&lt;LicensedProductBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Session:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="CustomSectionBinding" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+        <Property Name="Email:TagBinding&lt;string&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Identifier:TagBinding&lt;string&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Newsletter:TagBinding&lt;bool&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="OnInitialize:TagBinding&lt;int&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="DeactivationRequestBinding" CoveredStatements="11" TotalStatements="14" CoveragePercent="79">
+        <Property Name="ClientVersion:int" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        </Property>
+        <Property Name="Locale:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MachineHashes:IEnumerable&lt;string&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Products:IEnumerable&lt;string&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="SerialNumber:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Method Name="ToString():string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+      </Type>
+      <Type Name="LicensedProductBinding" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+        <Property Name="Edition:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="EditionDisplayName:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="IsExtension:bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MajorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="MinorVersion:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductCode:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="ProductDescription:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="UsersPurchased:int" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="TagBinding&lt;T&gt;" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Property Name="Date:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+        <Property Name="Value:T" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Serialization.Exceptions" CoveredStatements="24" TotalStatements="24" CoveragePercent="100">
+      <Type Name="ActivationRequestDeserializationException" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Constructor Name="ActivationRequestDeserializationException()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="ActivationRequestDeserializationException(string)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="ActivationRequestDeserializationException(string,Exception)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="ActivationRequestDeserializationException(SerializationInfo,StreamingContext)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="InvalidDeactivationRequestException" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Constructor Name="InvalidDeactivationRequestException(string)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="InvalidDeactivationRequestException(string,Exception)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="InvalidDeactivationRequestException()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+        <Constructor Name="InvalidDeactivationRequestException(SerializationInfo,StreamingContext)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Serialization.Internal" CoveredStatements="94" TotalStatements="94" CoveragePercent="100">
+      <Type Name="ActivationRequestsContainer" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+        <Property Name="ActivationRequests:List&lt;ActivationRequestBinding&gt;" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Property>
+      </Type>
+      <Type Name="ActivationResponseBuilder" CoveredStatements="92" TotalStatements="92" CoveragePercent="100">
+        <Constructor Name="ActivationResponseBuilder(IDataSigner)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="GetActivationResponse(ActivationResponseBinding):string" CoveredStatements="88" TotalStatements="88" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+    <Namespace Name="RedGate.Licensing.Server.Serialization.Serializers" CoveredStatements="178" TotalStatements="189" CoveragePercent="94">
+      <Type Name="ActivationSerializer" CoveredStatements="36" TotalStatements="36" CoveragePercent="100">
+        <Constructor Name="ActivationSerializer(IDataSigner,ITagParser)" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="Deserialize(string):ActivationRequest" CoveredStatements="21" TotalStatements="21" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="20" TotalStatements="20" CoveragePercent="100" />
+          <AnonymousMethod Name="(ActivationRequestBinding):ProductVersion" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="Serialize(ActivationResponse):string" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+          <AnonymousMethod Name="(LicensedProduct):LicensedProductBinding" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+      </Type>
+      <Type Name="DeactivationSerializer" CoveredStatements="62" TotalStatements="62" CoveragePercent="100">
+        <Constructor Name="DeactivationSerializer(IDataSigner)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="CreateDeactivationRequest(XElement):DeactivationRequestBinding" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+          <OwnCoverage CoveredStatements="13" TotalStatements="13" CoveragePercent="100" />
+          <AnonymousMethod Name="(XElement):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+          <AnonymousMethod Name="(XElement):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+        </Method>
+        <Method Name="Deserialize(string):DeactivationRequest" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="ExtractData(XElement):XElement" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="ExtractRequest(XDocument):XElement" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="ExtractSignature(XElement):XElement" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="ParseRequest(string):XDocument" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="VerifyDataSignature(XElement,XElement):void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+      </Type>
+      <Type Name="LoggingActivationSerializer" CoveredStatements="22" TotalStatements="22" CoveragePercent="100">
+        <Constructor Name="LoggingActivationSerializer(IActivationSerializer,IQueueSink,string,string)" CoveredStatements="11" TotalStatements="11" CoveragePercent="100" />
+        <Method Name="Deserialize(string):ActivationRequest" CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+        <Method Name="Serialize(ActivationResponse):string" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="LoggingDeactivationSerializer" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+        <Constructor Name="LoggingDeactivationSerializer(IDeactivationSerializer)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="Deserialize(string):DeactivationRequest" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+      </Type>
+      <Type Name="TagParser" CoveredStatements="49" TotalStatements="60" CoveragePercent="82">
+        <Constructor Name="TagParser(ILog,Func&lt;DateTime&gt;)" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+        <Method Name="AddTag(ICollection&lt;ActivationAttemptTagRecord&gt;,string,string,DateTime):void" CoveredStatements="10" TotalStatements="15" CoveragePercent="67" />
+        <Method Name="Parse(CustomSectionBinding):List&lt;ActivationAttemptTagRecord&gt;" CoveredStatements="19" TotalStatements="22" CoveragePercent="86" />
+        <Method Name="ParseTagDateTime(string):DateTime" CoveredStatements="11" TotalStatements="14" CoveragePercent="79" />
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>
